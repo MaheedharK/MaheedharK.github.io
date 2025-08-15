@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maheedhar Kolli — Portfolio</title>
+  <meta name="description" content="Portfolio of Maheedhar Kolli: projects, experience, publications, awards, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0e14;--card:#111827;--muted:#9aa3b2;--text:#f2f4f7;--accent:#7c3aed;--accent-2:#22c55e;--ring:rgba(124,58,237,.35);
+      --border:rgba(148,163,184,.18);--shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(1200px 600px at 20% -10%,rgba(124,58,237,.16),transparent),radial-gradient(1000px 500px at 100% 0,rgba(34,197,94,.12),transparent),var(--bg);color:var(--text);line-height:1.65}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1080px;margin:0 auto;padding:28px}
+    header{position:sticky;top:0;background:linear-gradient(to bottom,rgba(11,14,20,.9),rgba(11,14,20,.7) 60%,transparent);backdrop-filter:saturate(140%) blur(8px);z-index:10}
+    nav{display:flex;gap:16px;align-items:center;justify-content:space-between}
+    .brand{font-weight:800;letter-spacing:.3px}
+    .nav-links a{padding:8px 12px;border-radius:10px;color:var(--muted)}
+    .nav-links a:hover{background:rgba(124,58,237,.12);color:var(--text)}
+    .pill{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--ring);padding:8px 12px;border-radius:999px;font-size:12px;color:var(--muted)}
+    /* Hero */
+    .hero{padding:72px 0 32px;display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center}
+    .hero h1{font-size:44px;line-height:1.1;margin:0 0 12px}
+    .hero p{color:var(--muted);margin:0 0 22px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{background:var(--accent);border:none;color:white;padding:12px 16px;border-radius:12px;font-weight:600;box-shadow:var(--shadow);cursor:pointer}
+    .btn:hover{filter:brightness(1.05)}
+    .btn.secondary{background:#1f2937}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.0));border:1px solid var(--border);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+    .avatar{width:100%;aspect-ratio:1/1;border-radius:16px;background:linear-gradient(135deg,#1f2937,#111827);display:grid;place-items:center;color:#9ca3af;font-weight:600}
+    /* Sections */
+    section{padding:48px 0}
+    .section-title{font-size:20px;letter-spacing:.6px;text-transform:uppercase;color:var(--muted);margin:0 0 18px}
+    .grid{display:grid;gap:16px}
+    .grid.skills{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .grid.cards{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+    .tag{display:inline-block;padding:6px 10px;border:1px solid var(--border);border-radius:999px;font-size:12px;color:var(--muted);margin:4px 6px 0 0}
+    .list{margin:8px 0 0 0;padding-left:18px}
+    .list li{margin:6px 0}
+    footer{padding:32px 0;color:var(--muted);text-align:center}
+    /* Animations */
+    @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+    [data-animate]{animation:fadeUp .6s ease both}
+    .subtle{color:var(--muted)}
+    .link{color:#c4b5fd}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.split{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">Maheedhar Kolli</div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#publications">Publications</a>
+          <a href="#awards">Awards</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero" id="about">
+      <div data-animate>
+        <span class="pill">Statistics & Data Science • NLP • ML Engineering</span>
+        <h1>Turning data into <span style="color:var(--accent-2)">decisions</span> and <span style="color:var(--accent)">products</span>.</h1>
+        <p>MS in Statistics & Data Science at the University of Arizona (Aug ’22 – Aug ’25). I design data products, build ML/NLP pipelines, and translate business questions into measurable outcomes. Previously SDE‑I at Phenom People; Business Analyst at UArizona.</p>
+        <div class="cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn secondary" href="#contact">Contact</a>
+        </div>
+      </div>
+      <div data-animate>
+        <div class="avatar card">Your Photo<br/><span class="subtle">(replace this box with a headshot)</span></div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="grid skills">
+        <div class="card" data-animate>
+          <h3>Data Science</h3>
+          <p class="subtle">EDA, ML algorithms, Statistical analysis, Recommendation systems, Deep learning, Hypothesis testing</p>
+          <div>
+            <span class="tag">PCA</span>
+            <span class="tag">t‑SNE</span>
+            <span class="tag">One‑vs‑Rest</span>
+            <span class="tag">Evaluation (F1, ROC/PR‑AUC)</span>
+          </div>
+        </div>
+        <div class="card" data-animate>
+          <h3>Cloud & Platforms</h3>
+          <p class="subtle">AWS, Docker, Kafka, Event‑driven systems, Jenkins, Prometheus</p>
+          <div>
+            <span class="tag">HPC</span>
+            <span class="tag">LangChain</span>
+            <span class="tag">FAISS</span>
+          </div>
+        </div>
+        <div class="card" data-animate>
+          <h3>Languages</h3>
+          <p class="subtle">Python, R, Java, C</p>
+          <div>
+            <span class="tag">PyTorch</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">Scikit‑learn</span>
+          </div>
+        </div>
+        <div class="card" data-animate>
+          <h3>Databases & Tools</h3>
+          <p class="subtle">MySQL, MongoDB, ElasticSearch, Redis</p>
+          <div>
+            <span class="tag">Tableau</span>
+            <span class="tag">PowerBI</span>
+            <span class="tag">Git/GitHub</span>
+            <span class="tag">VS Code</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="grid cards">
+        <article class="card" data-animate>
+          <h3>The University of Arizona — Business Analyst (Part‑time)</h3>
+          <p class="subtle">Jan ’23 – Aug ’23</p>
+          <ul class="list">
+            <li>Built dashboards and reports for AME Business Office using UAnalytics; automated grant analytics.</li>
+            <li>Owned multiple financial systems projects; deployed and maintained environments.</li>
+            <li><span class="subtle">Stack:</span> Python, SQL, AWS, Tableau, MS Suite.</li>
+          </ul>
+        </article>
+        <article class="card" data-animate>
+          <h3>Phenom People — SDE‑I (Full‑time)</h3>
+          <p class="subtle">Aug ’21 – Aug ’22</p>
+          <ul class="list">
+            <li>Designed, tested, deployed, and maintained a real‑time app for Client Go‑LIVE; implemented REST APIs (Java 8, Spring Boot, Play).</li>
+            <li>Cut client escalations by <b>13%</b> via QA/UAT improvements and adding ElasticSearch alongside MongoDB.</li>
+            <li>Launched a RAG‑based HR/Client LLM chatbot (SBERT+FAISS, LangChain, AWS) with guardrails; reduced p50 latency by <b>68%</b>, deflected <b>52%</b> of tickets, and achieved ≥<b>91%</b> answer accuracy.</li>
+            <li><span class="subtle">Stack:</span> Python, Java, MongoDB, Redis, SQL, ElasticSearch, AWS, Docker, Kafka, Kibana, Prometheus, FAISS.</li>
+          </ul>
+        </article>
+        <article class="card" data-animate>
+          <h3>Excel Radio Frequencies — ML Engineer (Intern)</h3>
+          <p class="subtle">Jan ’21 – Aug ’21</p>
+          <ul class="list">
+            <li>Built a one‑class SVM to detect anomalies in network packets; delivered metrics for performance optimization.</li>
+            <li>Improved security features; fixed 20+ bugs via root‑cause analysis on LAG, SNMP, and Storm Control.</li>
+            <li>Implemented edge‑based predictive maintenance; reduced downtime by <b>15%</b> and costs by <b>11%</b> vs cloud‑only baselines.</li>
+            <li><span class="subtle">Stack:</span> Python, Embedded C, Keras, TensorFlow, Scikit‑learn, Pandas, NumPy, Matplotlib, Shell, Tableau, Jupyter.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="grid cards">
+        <article class="card" data-animate>
+          <h3>Master Thesis — Multi‑Label Emotion Classification (NLP)</h3>
+          <p class="subtle">PyTorch, Seaborn, Hugging Face Transformers, LangChain, HPC</p>
+          <ul class="list">
+            <li>Analyzed one of the largest public multi‑label emotion datasets (28 emotions) with modern NLP.</li>
+            <li>Compared BERT, Bi‑GRU, and One‑vs‑Rest Logistic Regression with RoBERTa/SBERT embeddings.</li>
+            <li>Used PCA/t‑SNE for dimensionality reduction; robust metrics (F1, ROC/PR‑AUC, sensitivity/specificity).</li>
+            <li>Achieved macro‑average F1 of <b>0.48</b> on the best model using label‑specific thresholds.</li>
+          </ul>
+        </article>
+        <article class="card" data-animate>
+          <h3>Huawei Digix — Ad CTR Prediction</h3>
+          <p class="subtle">Python, Ensembles, scikit‑learn, NumPy, Matplotlib</p>
+          <ul class="list">
+            <li>Predicted mobile ad click‑through rate on highly imbalanced data; engineered resampling strategies.</li>
+            <li>Dimensionality reduction and hyper‑parameter tuning; achieved <b>0.82 F1</b> with XGBoost.</li>
+            <li><a class="link" href="https://github.com/MaheedharK/CTR-Prediction-main/tree/main/CTR-Prediction-main" target="_blank" rel="noopener">View repository →</a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications">
+      <h2 class="section-title">Publications</h2>
+      <div class="card" data-animate>
+        <div class="split">
+          <div>
+            <h3>An Efficient Predictive Alimentary System using Machine Learning on the Edge</h3>
+            <p class="subtle">Published: 05/30/2022</p>
+          </div>
+          <div style="text-align:right">
+            <a class="btn secondary" href="https://ieeexplore.ieee.org/document/9780691" target="_blank" rel="noopener">IEEE Xplore</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards -->
+    <section id="awards">
+      <h2 class="section-title">Awards & Achievements</h2>
+      <div class="grid skills">
+        <div class="card" data-animate>
+          <h3>University Bronze Medalist</h3>
+          <p class="subtle">All‑round excellence, ICFAI‑Tech (Faculty of Science & Technology)</p>
+        </div>
+        <div class="card" data-animate>
+          <h3>Best Paper Award</h3>
+          <p class="subtle">6th International Conference on Devices, Circuits, and Systems (ICDCS) 2022</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="grid cards">
+        <article class="card" data-animate>
+          <h3>M.S. in Statistics & Data Science</h3>
+          <p class="subtle">University of Arizona, Dept. of Mathematics • Aug ’22 – Aug ’25</p>
+          <p class="subtle">Coursework: Statistical ML, Advanced Regression, Advanced Statistical NLP, Neural Networks, SQL/NoSQL</p>
+        </article>
+        <article class="card" data-animate>
+          <h3>B.Tech in Electronics & Communication Engineering</h3>
+          <p class="subtle">ICFAI University, Hyderabad • Aug ’17 – Jun ’21</p>
+          <p class="subtle">Coursework: Intro to ML, Database Systems, DS&A, OOP, Big Data Modeling & Management</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="card" data-animate>
+        <p>Email: <a class="link" href="mailto:kolli@arizona.edu">kolli@arizona.edu</a></p>
+        <p>LinkedIn: <a class="link" href="http://www.linkedin.com/in/maheedhar-kolli" target="_blank" rel="noopener">linkedin.com/in/maheedhar-kolli</a></p>
+        <p>GitHub: <a class="link" href="https://github.com/MaheedharK" target="_blank" rel="noopener">github.com/MaheedharK</a></p>
+        <p>Phone: <span class="subtle">+1 (520) 589‑3685</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="y"></span> Maheedhar Kolli • Built with HTML/CSS • Deployed on GitHub Pages</div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
